@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/Logo-nome.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Paraíso dos Pets</title>
+</head>
+<body>
+    <section class="cabecalho">
+        <div class="contatos">
+            <main class="margem">
+                <img src="./imagens/telefone.png" alt="Telefone" class="telefone">
+                <span class="telefone"><a href="#">+55 (66) 9 9605-0233</a></span>
+                <img src="./imagens/email.png" alt="E-mail" class="email">
+                <span class="email"><a href="#">vinicius.f@unemat.br</a></span>
+            </main>
+        </div>
+        <div class="container">
+            <main class="margem">
+                <a class="logo" href="#"><img src="./imagens/Logo-nome.png" alt="Logo" class="logo"></a>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#dog"><span>Cachorro</span></a></li>
+                        <li><a href="#cat"><span>Gato</span></a></li>
+                        <li><a href="#Silvestres"><span>Silvestres</span></a></li>
+                        <li><a href="#aves"><span>Aves</span></a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <button class="pesquisar" id="botao-carrinho">🛒 Carrinho de compras</button>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div class="cart-items-container">
+                <div id="cart-items">
+                    
+                </div>
+            </div>
+            <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <section id="dog" class="products-section">
+        <h2>Cachorro</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <img src="./imagens/mordedor.png" alt="Produto 1">
+                <p>Mordedor, para seu filhotinho poder morder à vontade e não ter problemas no crescimento dos dentinhos.</p>
+                <button class="comprar-btn" data-preco="15.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/pote-dog.png" alt="Produto 2">
+                <p>Pote de comida para cachorro de todos os tipos e portes.</p>
+                <button class="comprar-btn" data-preco="29.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/racao.jpeg" alt="Produto 3">
+                <p>Ração para cachorro de todos os tipos e portes.</p>
+                <button class="comprar-btn" data-preco="39.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/coleira.jpg" alt="Produto 3">
+                <p>Coleira para você passear com seu cãozinho sem problemas de ele fugir.</p>
+                <button class="comprar-btn" data-preco="19.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/focinheira.jpeg" alt="Produto 3">
+                <p>Focinheira para cães de porte grande, ideal para passeios.</p>
+                <button class="comprar-btn" data-preco="24.99">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cat" class="products-section">
+        <h2>Gato</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <img src="./imagens/arranhador.jpg" alt="Produto 4">
+                <p>Arranhador para seu gatinho ter a maior diversão possível e realizar muitas brincadeiras.</p>
+                <button class="comprar-btn" data-preco="49.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/casinha.jpg" alt="Produto 5">
+                <p>Casinha para seu gatinho dormir ou brincar como se estivesse no céu, feita de lã.</p>
+                <button class="comprar-btn" data-preco="59.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/amigurimi.jpeg" alt="Produto 6">
+                <p>Amigurumi para seu gato ter a companhia necessária enquanto o dono está fora.</p>
+                <button class="comprar-btn" data-preco="19.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/coleira-gato.jpeg" alt="Produto 6">
+                <p>Coleira para gatinhos, ideal para passeios seguros.</p>
+                <button class="comprar-btn" data-preco="14.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/sache.jpeg" alt="Produto 6">
+                <p>Sachê delicioso para seu gatinho aproveitar e comer à vontade.</p>
+                <button class="comprar-btn" data-preco="9.99">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Silvestres" class="products-section">
+        <h2>Silvestres</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <img src="./imagens/casa-de-camaleao.jpg" alt="Produto 7">
+                <p>Casa de camaleão com reguladores de clima para seu lagarto.</p>
+                <button class="comprar-btn" data-preco="79.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/potinho-furao.jpg" alt="Produto 8">
+                <p>Potinho para furão, garantindo conforto e praticidade.</p>
+                <button class="comprar-btn" data-preco="39.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/casina-rato.jpeg" alt="Produto 9">
+                <p>Casinha para chinchila, ideal para mantê-la seca e confortável.</p>
+                <button class="comprar-btn" data-preco="49.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/forro.jpeg" alt="Produto 9">
+                <p>Forro para recinto de cobras, garantindo conforto e bem-estar.</p>
+                <button class="comprar-btn" data-preco="29.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/aquario.jpeg" alt="Produto 9">
+                <p>Aquário para peixes, proporcionando um ambiente agradável e uma linda decoração para sua casa.</p>
+                <button class="comprar-btn" data-preco="99.99">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="aves" class="products-section">
+        <h2>Aves</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <img src="./imagens/passaros.jpeg" alt="Produto 10">
+                <p>Guia para cuidar, alimentar e tratar seu pássaro, garantindo uma vida saudável.</p>
+                <button class="comprar-btn" data-preco="19.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/gaiola.jpeg" alt="Produto 11">
+                <p>Gaiola confortável para seu pássaro.</p>
+                <button class="comprar-btn" data-preco="39.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/alpiste.jpeg" alt="Produto 12">
+                <p>Alpiste para alimentação de aves, disponível em diversas variedades.</p>
+                <button class="comprar-btn" data-preco="9.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/brinquedo.jpg" alt="Produto 12">
+                <p>Parquinho para seu pássaro correr, brincar, voar e pular.</p>
+                <button class="comprar-btn" data-preco="29.99">Comprar</button>
+            </div>
+            <div class="product-item">
+                <img src="./imagens/bebedor.jpeg" alt="Produto 12">
+                <p>Bebedouro para pássaros, proporcionando conforto em qualquer ambiente.</p>
+                <button class="comprar-btn" data-preco="19.99">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <section class="copyright">
+            <p>&copy; 2024 Joao Victor Poloniato Buss</p>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
